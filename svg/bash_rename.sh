@@ -19,7 +19,7 @@
 # that style of filenames in mind.
 
 # There are lots of comments in this file,
-# so you're encouraged to read them
+# and you're encouraged to read them
 # if you'd like to modify it.
 
 
