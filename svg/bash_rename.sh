@@ -7,9 +7,9 @@
 # to rename their SVGs. Oh well.
 #2345678901234567890123456789012345678901234567890
 
-# Note: Here is an example Noto Emoji SVG filename: 
+# Note: Here is an example Noto Emoji SVG filename:
 # "emoji_u00a9.svg"
-# Here is a Noto Emoji ZWJ sequence SVG filename: 
+# Here is a Noto Emoji ZWJ sequence SVG filename:
 # "emoji_u1f469_1f3fd_200d_1f692.svg"
 
 # We want to turn those into something like this:
@@ -163,7 +163,7 @@ done
 
 
 ##### The following one ("Heavy Black Heart")
-##### Shouldn't be needed. It might actually 
+##### Shouldn't be needed. It might actually
 ##### break things at the moment. Uncomment if needed.
 # (Grabbing the name of every SVG in this directory
 # that contains 2764 in the filename)
