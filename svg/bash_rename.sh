@@ -59,13 +59,13 @@ done
 
 
 # (Grabbing the name of every SVG in this directory
-# that contains -2640- in the filename)
-for i in $(\ls -d *-2640-*.svg)
+# that contains -2640 in the filename)
+for i in $(\ls -d *-2640*.svg)
 do
-j=${i//-2640-/-2640-fe0f}
+j=${i//-2640/-2640-fe0f}
 mv $i $j
 echo "renaming from $i to $j"
-# remove "-2640-", replace with "-2640-fe0f".
+# remove "-2640.svg", replace with "-2640-fe0f.svg".
 # 2640 is "Female Sign" ♀️
 # http://unicode.org/cldr/utility/character.jsp?a=2640
 # fe0f is "Variation Selector 16".
@@ -74,13 +74,13 @@ done
 
 
 # (Grabbing the name of every SVG in this directory
-# that contains -2642- in the filename)
-for i in $(\ls -d *-2642-*.svg)
+# that contains -2642 in the filename)
+for i in $(\ls -d *-2642*.svg)
 do
-j=${i//-2642-/-2642-fe0f}
+j=${i//-2642/-2642-fe0f}
 mv $i $j
 echo "renaming from $i to $j"
-# remove "-2642-", replace with "-2642-fe0f".
+# remove "-2642", replace with "-2642-fe0f".
 # 2642 is "Male Sign" ♂️
 # http://unicode.org/cldr/utility/character.jsp?a=2642
 # fe0f is "Variation Selector 16".
@@ -107,11 +107,11 @@ done
 
 # (Grabbing the name of every SVG in this directory
 # that contains 1f3f3-200d in the filename)
-for i in $(\ls -d *1f3f3-200d*.svg)
-do
-j=${i//1f3f3-200d/1f3f3-fe0f-200d}
-mv $i $j
-echo "renaming from $i to $j"
+##### for i in $(\ls -d *1f3f3-200d*.svg)
+##### do
+##### j=${i//1f3f3-200d/1f3f3-fe0f-200d}
+##### mv $i $j
+##### echo "renaming from $i to $j"
 # remove "1f3f3-200d", replace with "1f3f3-fe0f-200d".
 # 1f3f3 is "Waving White Flag" 🏳️
 # http://unicode.org/cldr/utility/character.jsp?a=1f3f3
@@ -120,7 +120,7 @@ echo "renaming from $i to $j"
 # 200d is "Zero Width Joiner"
 # http://unicode.org/cldr/utility/character.jsp?a=200d
 # Not yet implemented on the Noto SVG side, this is for the Rainbow Flag sequence. 🏳️‍🌈 🏳️‍🌈 🏳️‍🌈
-done
+##### done
 
 
 # (Grabbing the name of every SVG in this directory
