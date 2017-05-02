@@ -124,15 +124,13 @@ done
 
 
 # (Grabbing the name of every SVG in this directory
-# that contains 200d-2695 in the filename)
-for i in $(\ls -d *200d-2695*.svg)
+# that contains -2695 in the filename)
+for i in $(\ls -d *-2695*.svg)
 do
-j=${i//200d-2695/200d-2695-fe0f}
+j=${i//-2695/-2695-fe0f}
 mv $i $j
 echo "renaming from $i to $j"
-# remove "200d-2695", replace with "200d-2695-fe0f".
-# 200d is "Zero Width Joiner"
-# http://unicode.org/cldr/utility/character.jsp?a=200d
+# remove "-2695", replace with "-2695-fe0f".
 # 2695 is "Staff of Aesculapius" ⚕️
 # http://unicode.org/cldr/utility/character.jsp?a=2695
 # fe0f is "Variation Selector 16".
@@ -141,15 +139,13 @@ done
 
 
 # (Grabbing the name of every SVG in this directory
-# that contains 200d-2696 in the filename)
-for i in $(\ls -d *200d-2696*.svg)
+# that contains -2696 in the filename)
+for i in $(\ls -d *-2696*.svg)
 do
-j=${i//200d-2696/200d-2696-fe0f}
+j=${i//-2696/-2696-fe0f}
 mv $i $j
 echo "renaming from $i to $j"
-# remove "200d-2696", replace with "200d-2696-fe0f".
-# 200d is "Zero Width Joiner"
-# http://unicode.org/cldr/utility/character.jsp?a=200d
+# remove "-2696", replace with "-2696-fe0f".
 # 2696 is "Scales" ⚖️
 # http://unicode.org/cldr/utility/character.jsp?a=2696
 # fe0f is "Variation Selector 16".
@@ -158,15 +154,13 @@ done
 
 
 # (Grabbing the name of every SVG in this directory
-# that contains 200d-2708 in the filename)
-for i in $(\ls -d *200d-2708*.svg)
+# that contains -2708 in the filename)
+for i in $(\ls -d *-2708*.svg)
 do
-j=${i//200d-2708/200d-2708-fe0f}
+j=${i//-2708/-2708-fe0f}
 mv $i $j
 echo "renaming from $i to $j"
-# remove "200d-2708", replace with "200d-2708-fe0f".
-# 200d is "Zero Width Joiner"
-# http://unicode.org/cldr/utility/character.jsp?a=200d
+# remove "-2708", replace with "-2708-fe0f".
 # 2708 is "Airplane" ✈️
 # http://unicode.org/cldr/utility/character.jsp?a=2708
 # fe0f is "Variation Selector 16".
@@ -178,15 +172,13 @@ done
 ##### Shouldn't be needed. It might actually
 ##### break things at the moment. Uncomment if needed.
 # (Grabbing the name of every SVG in this directory
-# that contains 200d-2764 in the filename)
-##### for i in $(\ls -d *200d-2764*.svg)
+# that contains -2764 in the filename)
+##### for i in $(\ls -d *-2764*.svg)
 ##### do
-##### j= ${i//200d-2764/200d-2764-fe0f}
+##### j= ${i//-2764/-2764-fe0f}
 ##### mv $i $j
 ##### echo "renaming from $i to $j"
-# remove "200d-2764", replace with "200d-2764-fe0f".
-# 200d is "Zero Width Joiner"
-# http://unicode.org/cldr/utility/character.jsp?a=200d
+# remove "-2764", replace with "-2764-fe0f".
 # 2764 is "Heavy Black Heart" ❤️
 # http://unicode.org/cldr/utility/character.jsp?a=2764
 # fe0f is "Variation Selector 16".
