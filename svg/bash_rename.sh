@@ -1,5 +1,5 @@
-# batch processing svg filenames 
-# from Noto Emoji source 
+# batch processing svg filenames
+# from Noto Emoji source
 # (https://github.com/googlei18n/noto-emoj)
 # to match https://github.com/eosrei/twemoji-color-font
 
@@ -16,17 +16,29 @@
 # And eosrei's build process is designed with
 # those styles of filenames in mind.
 
-# Grab the filename of every SVG in this directory
+
+# (Grab the filename of every SVG in this directory
 # that begins with "emoji")
 for i in $(\ls -d emoji*.svg)
 do
-# We have set "i" to be each SVG's filename (in turn) 
-# in this directory
 
 # We are removing the beginning of every filename,
 # i.e. we are removing "emoji_u"
 # So we must trim the first 6 characters.
-mv $i ${i:6}
+mv $i ${i:7}
+echo "renaming from $i to ${i:7}"
 done
 # see: http://tldp.org/LDP/abs/html/string-manipulation.html
 # subheading "Substring Extraction"
+
+
+# (Grab the name of every SVG in this directory
+# that contains an underscore in the filename)
+for i in $(\ls -d *_*.svg)
+do
+mv $i ${i//_/-}
+echo "renaming from $i to ${i//_/-}"
+# remove underscores, replace with dashes.
+# See: http://www.thegeekstuff.com/2010/07/bash-string-manipulation/
+# "Replace all the matches" heading
+done
